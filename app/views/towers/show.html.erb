@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tower.name %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @tower.desc %>
+</p>
+<% if can? :update, @tower %>
+  <%= link_to "Edit", edit_tower_path(@tower) %>
+<% end %>
+<%= link_to 'Back', towers_path %>
+
+

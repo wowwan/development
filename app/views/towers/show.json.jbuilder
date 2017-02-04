@@ -1,0 +1,1 @@
+json.partial! "towers/tower", tower: @tower

@@ -1,0 +1,1 @@
+json.array! @towers, partial: 'towers/tower', as: :tower
