@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+scope "(:locale)", :locale => /en|ru/ do
+  resources :countries
+    root :to => 'countries#index'
   resources :towers
   devise_for :users
+
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

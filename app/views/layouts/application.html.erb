@@ -8,12 +8,19 @@
 </head>
 <body>
 <% if user_signed_in? %>
-    <span>Здравствуйте, <%= current_user.email %></span>
+    <span><%= t('phrases.hello') %>, <%= current_user.email %></span>
     <%= link_to 'Выйти', destroy_user_session_path, :method => :delete %>
 <% else %>
     <%= link_to 'Войти', new_user_session_path %> или <%= link_to 'Зарегистрироваться', new_user_registration_path %>
 <% end %>
+<p>
+<%= link_to_unless I18n.locale == :en, "English", locale: :en %>
+|
+<%= link_to_unless I18n.locale == :de, "Russian", locale: :ru %>
+</p>
 <%= yield %>
-
+<p><b>I18n.locale:</b> 
+<%= I18n.locale %>
+</p>
 </body>
 </html>
