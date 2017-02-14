@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Summary</h1>
+
+<body>
+<h4>Select your citizenship</h4>
+<select><%= options_from_collection_for_select(Citizenship.all, :id, :country_name) %></select>
+<h4>Select country</h4>
+<select><%= options_from_collection_for_select(Country.all, :id, :name) %></select>
+</body>

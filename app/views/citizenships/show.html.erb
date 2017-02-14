@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Country name:</strong>
+  <%= @citizenship.country_name %>
+</p>
+
+<p>
+  <strong>Origin citizen:</strong>
+  <%= @citizenship.origin_citizen %>
+</p>
+
+<p>
+  <strong>Origin citizen for:</strong>
+  <%= @citizenship.origin_citizen_for %>
+</p>
+
+<%= link_to 'Edit', edit_citizenship_path(@citizenship) %> |
+<%= link_to 'Back', citizenships_path %>

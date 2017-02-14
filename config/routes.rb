@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  
 scope "(:locale)", :locale => /en|ru/ do
   resources :countries
     root :to => 'countries#index'
   resources :towers
+  resources :citizenships
+  resources :summary
   devise_for :users
 
   end
