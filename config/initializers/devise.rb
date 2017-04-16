@@ -14,4 +14,5 @@ config.sign_out_via = :delete
 #Add your ID and secret here
 #ID first, secret second
   config.omniauth :facebook, '142524769616083', 'ac75bcfff2f73711ffcc8234a9df19bc'
+  config.omniauth :google_oauth2, '693982765693-dntb5bj1p58uuf12bfh7e1jnfcogcuje.apps.googleusercontent.com', "GOOGLE_CLIENT_SECRET", { }
 end

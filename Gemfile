@@ -33,7 +33,7 @@ gem 'devise'
 gem 'rolify'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'omniauth-google-oauth2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
