@@ -19,7 +19,7 @@ module Appp
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     #I18n.load_path += Dir[Rails.root.join('lib', 'locale', '*.{rb,yml}')]
     config.i18n.default_locale = :ru
-
+    OmniAuth.config.test_mode = true
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
   end
