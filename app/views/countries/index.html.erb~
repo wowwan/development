@@ -31,6 +31,4 @@
 <br>
 
 <% if cannot? :update, @country %><%= link_to 'New country', countries_path, :onclick => 'alert("Please no!")' %>
-<% else %>
-<%= link_to 'New country', new_country_path %>
 <% end %>
